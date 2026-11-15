@@ -1,0 +1,90 @@
+.services-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 40px;
+}
+.services-about-section {
+  padding: 20px 0px;
+  background-color: #fff;
+  margin: 30px 0;
+}
+.about-grid {
+  display: grid;
+  padding: 10px 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+.card-view-all-link {
+  color: var(--color-accent);
+  text-decoration: underline;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+}
+.services-about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.faq-section {
+  margin-bottom: 50px;
+}
+.faq-container {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.step-container {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.step-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+}
+.faq-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--color-subtle);
+  padding: 10px;
+  justify-content: flex-start;
+  border: 1px solid var(--color-border);
+}
+@media screen and (min-width: 768px) {
+  /* Tablet and desktop styles */
+  .about-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-grid {
+    padding: 20px 20px;
+  }
+  .services-about-section {
+    margin: 50px 0;
+  }
+  .services-card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .card-view-all-link {
+    justify-content: flex-start;
+  }
+  .faq-item-container {
+    max-width: 800px;
+  }
+  .about-grid {
+    gap: 10rem;
+  }
+}

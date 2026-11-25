@@ -7,9 +7,11 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [
     tailwindcss(),
+
     react(),
     babel({ presets: [reactCompilerPreset()] }),
   ],
+  base: "/Pitstop-Shop/",
   server: {
     allowedHosts: [".trycloudflare.com"],
   },
